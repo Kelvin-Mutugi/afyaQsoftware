@@ -1,0 +1,136 @@
+/* src/auth.css */
+*{
+    padding: 0px;
+    margin: 0px
+  }
+  body {
+      background-color: #E5F6FA;
+      font-family: Arial, sans-serif;
+    }
+    
+    .auth-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+    }
+    
+    .auth-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #023047;
+      font-weight: bold;
+    }
+    
+    .auth-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .auth-container input {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    
+    .auth-container button {
+      padding: 12px;
+      margin-top: 10px;
+      background-color: #219EBC;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .auth-container button:hover {
+      background-color: #197B9A;
+    }
+    
+    .auth-container p {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .auth-container .google-btn {
+      background-color: #DB4437;
+      margin-top: 10px;
+    }
+    
+    .auth-container .google-btn:hover {
+      background-color: #c1351d;
+    }
+    
+    .auth-container a {
+      color: #219EBC;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .auth-container a:hover {
+      text-decoration: underline;
+    }
+  
+    /*dashboard styling*/
+    .dashboard-container{
+      width: 100%;
+      margin: 3px auto;
+      background: white;
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+    }
+    .dashboard-container .topBar{
+      background-color: #2C3E50;
+      display: flex;
+      align-items: center;
+      padding: 5px 5px;
+      margin-bottom: 3px;
+    }
+    .dashboard-container .topBar div{
+      width: 50vw;
+      display: flex;
+      justify-content: right;
+      
+    }
+   
+    
+    
+    .dashboard-container button:hover {
+      background-color: #197B9A;
+    }
+    
+    .dashboard-container .announcements-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40vh;
+      width: 100vw;
+      background-color: rgb(156, 156, 156);
+      margin-bottom: 3px;
+    }
+  
+    .dashboard-container .body-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 3px;
+    }
+  
+    .dashboard-container .body-container .Checkin-button{
+      width: 150px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2C3E50;
+      color: #fff;
+      border-radius: 3%;
+    }

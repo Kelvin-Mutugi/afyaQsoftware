@@ -1,0 +1,207 @@
+.dashboard-container {
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f9ff;
+    min-height: 100vh;
+    
+  }
+  
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #0077b6;
+  }
+  
+  .logout-button {
+    background-color: #ef5350;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .actions-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .action-card {
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .action-card:hover {
+    background-color: #005f87;
+  }
+  
+  .modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInScale 0.3s ease;
+  }
+  
+  
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* dark transparent */
+    backdrop-filter: blur(5px); /* 🔥 this creates the blur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: backdrop-filter 0.3s ease, background 0.3s ease;
+  }
+  
+  .cancel-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    padding: 12px 18px;
+      background-color: #10424f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  }
+  .submit-button{
+    margin-top: 1rem;
+    margin-right: 5px;
+    padding: 0.5rem 1rem;
+    padding: 12px 18px;
+      background-color: #219EBC;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  }
+  /* --- Home Dashboard Section (Modern Style) --- */
+  .home-dashboard {
+    margin: 40px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #e0f7fa, #f9f9f9);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeInH 0.8s ease-in-out;
+  }
+  
+  .home-dashboard h3 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #00695c;
+  }
+  
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card h4 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #00796b;
+  }
+  
+  .card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* Nice fade-in animation when page loads */
+  @keyframes fadeInH {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Optional smooth opening animation */
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

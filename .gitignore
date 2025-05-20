@@ -1,0 +1,11 @@
+# Node modules
+my-react-app/node_modules/
+
+# Python cache
+python-scripts/__pycache__/
+
+# Env files
+*.env
+
+# Build folders
+my-react-app/build/
